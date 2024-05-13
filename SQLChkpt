@@ -1,0 +1,27 @@
+/*create database checkpoint*/
+/*use checkpoint*/
+/*create table Customer (
+Customer_id varchar(20) primary key,
+customer_Name varchar(20) not null,
+customer_Tel bigint(20)
+);*/
+/*create table product (
+Product_id varchar(20) primary key,
+Product_name varchar(20) not null,
+Price bigint check (Price > 0)
+);*/
+
+/*create table Orders (
+Customer_id varchar(20),
+Product_id varchar(20),
+Quantity bigint,
+Total_amount bigint,
+constraint fk_cust foreign key (Customer_id) references Customer (Customer_id),
+constraint fk_prod foreign key (Product_id) references product (Product_id),
+constraint pk_order primary key (Customer_id,Product_id)
+);*/
+/*alter table product
+add column Category varchar (20);*/
+/*alter table orders
+add column OrderDate timestamp DEFAULT CURRENT_TIMESTAMP;*/
+
