@@ -20,6 +20,19 @@ constraint fk_cust foreign key (Customer_id) references Customer (Customer_id),
 constraint fk_prod foreign key (Product_id) references product (Product_id),
 constraint pk_order primary key (Customer_id,Product_id)
 );*/
+
+
+//////////////////// DATA INSERTION ///////////////////
+
+/*insert into product values
+('P01','Samsung Galaxy s20',3299,'SmartPhone'),
+('P02','Asus Notebook',4599,'PC');*/
+/*insert into Customer values
+('C01','Ali',71321009),
+('C02','ASMA',77345823); */
+/*insert into Orders values 
+('C01','P02',2,9198,NULL),
+('C02','P01',1,3299,'2020/05/28*/
 /*alter table product
 add column Category varchar (20);*/
 /*alter table orders
