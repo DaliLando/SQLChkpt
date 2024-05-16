@@ -38,3 +38,40 @@ add column Category varchar (20);*/
 /*alter table orders
 add column OrderDate timestamp DEFAULT CURRENT_TIMESTAMP;*/
 
+///////////////////////////// Displays ///////////////////
+
+/*insert into customer values 
+('C03','Dali', 25342152),
+('C04','Maher',94300200);
+insert into product values 
+('P03','Iphone 15',5500,'Apple'),
+('P04','MSI',6000,'PC');
+insert into orders values 
+('C01','P03',3,16500,'2024-05-12'),
+('C04','P04',2,12000,'2024-04-22'),
+('C03','P02',1,3299,'2024-05-11');*/
+/*select * from customer;*/
+/*select product_name,Category from product 
+where 5000<price<10000;
+select * from orders
+order by price desc;*/
+/*select * from orders;
+select count(*) 'total orders',AVG(total_amount) 'average amount',max(total_amount)'highest price',min(total_amount)'lowest price' from orders;
+select product_id 'product',count(*) 'number of orders' from orders
+group by product_id;*/
+
+/*select customer_id  from orders
+group by customer_id
+having count(product_id) >=2*/
+
+/*select month(OrderDate) ' Month', count(*)'Orders' from orders 
+where year(OrderDate) = '2024'
+group by month(OrderDate);*/
+
+/* select p.product_name, c.customer_name, o.OrderDate
+from customer c inner join orders o
+on c.customer_id=o.customer_id
+inner join product p 
+on o.product_id= p.product_id */
+/*select * from orders 
+where year(OrderDate) < year(current_date ()-3);*/
